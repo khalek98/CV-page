@@ -1,2 +1,2 @@
 # CV-page
-Layout my CV page
+Layout of my CV page
