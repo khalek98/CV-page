@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+	color: #454040;
+}
+
+.mt-50 {
+	margin-top: 50px !important;
+}
+
+.mt-10 {
+	margin-top: 10px !important;
+}
+
+.mt-0 {
+	margin-top: 0 !important;
+}
+
+.general-wrapper {
+	display: flex;
+	height: 1699px;
+
+	.left-side {
+		display: flex;
+		padding: 0 60px;
+		flex-direction: column;
+		align-items: center;
+		width: 400px;
+		background-color: #b6d6d7;
+		padding-bottom: 100px;
+
+		.main-photo {
+			border-radius: 0 0 150px 150px;
+			overflow: hidden;
+			width: 100%;
+			height: 330px;
+
+			img {
+				width: 110%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+
+		.name {
+			margin-top: 25px;
+			font-size: 40px;
+			line-height: 42px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: .2rem;
+			color: #454040;
+		}
+
+		.job-title {
+			margin-top: 10px;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: #454040;
+			opacity: .5;
+		}
+
+		.social {
+			width: 240px;
+			margin-top: 15px;
+			display: flex;
+			-moz-column-gap: 20px;
+			column-gap: 20px;
+			row-gap: 10px;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			&__phone, &__mail {
+				text-decoration: none;
+				font-size: 17px;
+				line-height: 30px;
+			}
+
+			&__link {
+				display: inline-block;
+				text-decoration: none;
+				height: 40px;
+				width: 40px;
+			}
+
+			li {
+				list-style-type: none;
+
+				.fa-envelope,
+				.fa-house,
+				.fa-phone {
+					margin-right: 8px;
+					font-size: 20px;
+				}
+			}
+
+			address {
+				display: inline-block;
+				text-decoration: none;
+				font-size: 17px;
+				line-height: 30px;
+			}
+
+			i {
+				font-size: 40px;
+			}
+
+			.fa-linkedin {
+				color: #0a66c2;
+			}
+
+			.fa-github {
+				color: #000;
+			}
+
+			.fa-telegram {
+				color: #1a8ad5;
+			}
+		}
+
+	}
+
+	.right-side {
+		background-color: #d2e8e9;
+		width: 800px;
+		padding: 60px;
+
+		.cv-block {
+			&__link {
+				margin-top: 10px;
+				font-weight: 700;
+				display: inline-block;
+				text-decoration: none;
+				font-size: 20px;
+			}
+
+			&__descr {
+				font-size: 16px;
+				line-height: 26px;
+				margin-top: 0;
+				opacity: .8;
+			}
+
+			&__list-item {
+				line-height: 28px;
+			}
+		}
+	}
+}
+
+.cv-block {
+	width: 100%;
+	margin-top: 35px;
+
+	&__title {
+		letter-spacing: .4rem;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: #454040;
+	}
+
+	&__subtitle {
+		margin-top: 5px;
+		letter-spacing: .3rem;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #454040;
+		opacity: .5;
+	}
+
+	&__descr {
+		font-size: 16px;
+		line-height: 26px;
+		margin-top: 15px;
+	}
+
+	&__date {
+		margin-top: 20px;
+		opacity: .5;
+		font-size: 20px;
+	}
+
+	&__list {
+		margin-top: 15px;
+
+		&-recomend {
+			margin-top: 10px;
+		
+			li {
+				display: flex;
+				margin-top: 5px;
+				align-items: center;
+				font-size: 20px;
+				-moz-column-gap: 10px;
+				column-gap: 10px;
+			}
+		}
+
+		&-item {
+			font-size: 18px;
+			line-height: 32px;
+			margin-left: 20px;
+		}
+	}
+
+	&__recommendation {
+		display: flex;
+		margin-top: 20px;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	&__company {
+		font-size: 20px;
+	}
+
+	&__mail, &__phone {
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.divider {
+	width: 100%;
+	border: 1px solid #454040;
+	border-bottom: none;
+	
+	&_main {
+		margin-top: 15px;
+	}
+}
